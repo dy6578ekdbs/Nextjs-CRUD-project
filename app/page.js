@@ -9,13 +9,14 @@ export default async function Home() {
   console.log(result);
   return (
     <div>
-      안되나
+      홈
+      {/* 안되나
       {result.map((a) => (
         <div>
           <p>제목 : {a.title}</p>
           <p>글 : {a.content}</p>
         </div>
-      ))}
+      ))} */}
     </div>
   );
 }
