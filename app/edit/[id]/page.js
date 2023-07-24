@@ -18,7 +18,9 @@ export default async function Edit(props) {
         <input name="title" defaultValue={result.title} />
         <input name="content" defaultValue={result.content} />
         <input value={result._id.toString()} name="_id" type="hidden" />
-        <button type="submit">수정하기</button>
+        <button type="submit" className="button-style">
+          수정하기
+        </button>
       </form>
     </div>
   );

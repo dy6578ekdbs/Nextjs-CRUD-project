@@ -35,13 +35,19 @@ input {
   display: block;
   margin-bottom: 10px;
 }
+
 button {
+  background-color: none;
+  border: none;
+  background: none;
+}
+
+.button-style {
   padding: 10px 15px;
   background: lightgray;
   border: none;
   border-radius: 5px;
 }
-
 a {
   text-decoration: none;
   color: black;
