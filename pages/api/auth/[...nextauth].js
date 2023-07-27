@@ -8,8 +8,8 @@ import bcrypt from 'bcrypt';
 export const authOptions = {
   providers: [
     GithubProvider({
-      clientId: 'Github에서 발급받은 ID',
-      clientSecret: 'Github에서 발급받은 Secret',
+      clientId: '9595d2045c954f7b2dd0',
+      clientSecret: process.env.NEXT_PUBLIC_GITHUB_KEY,
     }),
 
     // 아이디, 비번으로 로그인할 수 있게 함
@@ -83,6 +83,6 @@ export const authOptions = {
   },
 
   adapter: MongoDBAdapter(connectDB),
-  secret: 'qwer1234',
+  secret: process.env.NEXT_PUBLIC_JWT_SECRET_KEY,
 };
 export default NextAuth(authOptions);
