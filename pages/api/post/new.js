@@ -6,6 +6,9 @@ export default async function handler(request, response) {
   let session = await getServerSession(request, response, authOptions);
 
   if (request.method === 'POST') {
+    request.body = JSON.parse(request.body);
+    console.log('>>> ', request.body);
+
     const client = await connectDB;
     const db = client.db('forum');
 
