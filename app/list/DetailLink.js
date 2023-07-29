@@ -13,7 +13,6 @@ export default function DetailLink() {
   let queryString = useSearchParams();
   let dynamic = useParams();
 
-  console.log('?', dynamic);
   return (
     <button
       onClick={() => {

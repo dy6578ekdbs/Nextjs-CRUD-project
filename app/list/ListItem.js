@@ -7,8 +7,6 @@ export default function ListItem({ result }) {
     // 삭제 성공하면 지우기
     fetch('/api/post/delete', { method: 'DELETE', body: id }).then(
       (response) => {
-        console.log(response);
-
         if (response.status == 200) {
           e.target.parentElement.style.opacity = 0;
           setTimeout(() => {

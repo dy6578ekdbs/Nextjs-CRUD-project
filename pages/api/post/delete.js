@@ -17,7 +17,6 @@ export default async function handler(request, response) {
 
     if (session) {
       if (session.user.email == request_post.author) {
-        console.log('삭제');
         try {
           let result = await db
             .collection('post')
